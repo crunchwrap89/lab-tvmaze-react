@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "lint": "eslint . --ext .ts,.tsx",
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@testing-library/react": "^13.4.0",
@@ -15,7 +17,6 @@
     "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.4",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.0",
     "prettier": "^2.8.2",
     "react": "^18.2.0",

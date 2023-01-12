@@ -35,9 +35,7 @@ function ShowSearch() {
           <SearchInput query={query} setQuery={setQuery} />
         </div>
       </div>
-      <div className="grid lg:grid-cols-5 sm:grid-cols-4 grid-cols-1 gap-4 p-2">
-        <SearchList results={results} />
-      </div>
+      <SearchList results={results} query={query} />
       <Separator />
     </div>
   );
