@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom';
 
 function HomeLink() {
   const navigate = useNavigate();
-
   function goHome() {
     navigate('/');
   }

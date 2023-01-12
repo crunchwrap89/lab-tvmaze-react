@@ -1,4 +1,4 @@
-declare interface IShow {
+export interface IShow {
   id: number;
   url: string;
   name: string;
@@ -28,13 +28,16 @@ export interface IShowSearch {
 }
 
 export interface Navigator extends NavigatorNetworkInformation {}
+
 declare interface NavigatorNetworkInformation {
   readonly connection?: NetworkInformation;
 }
+
 type Megabit = number;
 type Millisecond = number;
 type EffectiveConnectionType = '2g' | '3g' | '4g' | 'slow-2g';
 type ConnectionType = 'bluetooth' | 'cellular' | 'ethernet' | 'mixed' | 'none' | 'other' | 'unknown' | 'wifi' | 'wimax';
+
 interface NetworkInformation extends EventTarget {
   readonly type?: ConnectionType;
   readonly effectiveType?: EffectiveConnectionType;
